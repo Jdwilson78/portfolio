@@ -1,0 +1,104 @@
+<html>
+<head>
+<style>
+div{
+	border: 1px solid black;
+	background-color: lightblue;
+	padding: 23px 30px 30px 23px;
+}
+
+div{
+	border: 1px solid black;
+	background-color: lightblue;
+	padding: 23px 30px 30px 23px;
+}
+
+div{
+	border: 1px solid black;
+	background-color: lightblue;
+	padding: 23px 30px 30px 23px;
+}
+	
+ul.tab {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+
+ul.tab li
+{float:left;}
+
+ul.tab li a {
+	display: inline-block;
+	color: blue;
+	text-align: left;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.3s
+	font-size: 17px;
+}
+
+ul.tab li a:hover{
+	background-color: #ddd;
+}
+
+.tabcontent {
+	display:none;
+	padding: 6px 12px;
+	-webkit-animation: fadeEffect 1s;
+	animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect{
+	from {opacity: 0;}
+	to{opacity: 1;}
+}
+
+@keyframes fadeEffect {
+	from{opacity:0;}
+	to {opacity: 1;}
+}
+
+</style>
+</head>
+<body>
+<div align="left" style="font-size: 200%;"><img src="C:\Users\JDWilson78\Documents\mywebsites\images/Capture.jpg"> 
+<ul class="tab" align="center">
+	<li><a class="active" href="#home">Home</a></li>
+	<li><a href="#portfolio" class="tablinks" onclick="openCity(event, 'Portfolio')">Portfolio</a></li>
+	<li><a href="#contact" class="tablinks" onclick="openCity(event, 'contacts')" >Contacts</a></li>
+	<li><a href="about" class="tablinks" onclick="openCity(event, 'About')">About</a></li>
+</ul>
+</div>
+
+
+<div id="Portfolio" class="tabcontent">
+	<h3>Portfolio</h3>
+</div>
+
+
+<div align="center">Welcome to JDwilson's Design. I am here help you to get your website up and running.</div>
+
+<div align="center">Contact me: jardind07@gmail.com or at (239)219-5716</div>
+
+<script>
+function openTabs(evt, tabname) {
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i =0; i< tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+}
+tablinks = document. getElementsByClassName("tablinks");
+for(i =0;i < tablinks.length; i++) {
+	tablinks[i].className = tablinks[o}].className.replace(" active", "");
+}
+document.getElementById(tabName).style.display = "block";
+evt.currentTarget.classname+= "active";
+}
+</script>
+
+</body>
+</html>
